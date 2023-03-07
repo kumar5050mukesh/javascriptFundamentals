@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="tex"><label for="tex">enter user name</label>
+    <button type="submit" onclick="func()">submit</button>
+    <script>
+        function func(){
+            const input = document.getElementById("tex");
+            let text = input.value;
+            text = text.charAt(0).toUpperCase() + text.slice(1);
+            input.value = text;
+        }
+    </script>
+</body>
+</html>

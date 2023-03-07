@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="in"><label for="">enter the no of days</label>
+        <input type="text" id="outs">
+        <button type="submit" id="sub" onclick="func()">click to submit</button>
+        <select name="" id="dropdown">
+            <option value="4000">ECONOMY</option>
+            <option value="10000">MIDSIZE</option>
+            <option value="20000">LUXURY</option>
+        </select>
+        <script>
+             function func(){
+            let dropdown = document.querySelector("#dropdown");
+            let selectedValue = dropdown.value;
+            let ins = document.querySelector("#in").value
+            out=ins*selectedValue
+            document.querySelector("#outs").value=out}
+
+
+
+            
+        </script>
+    </div>
+</body>
+</html>

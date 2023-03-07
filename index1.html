@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="pass1"><label for="">input password 1</label><br>
+    <input type="text" id="pass2"><label for="">retype pass</label>
+    <button type="submit" id="sub">click to submit</button>
+    <script>
+       let h1=document.querySelector("#pass1");
+       let h2=document.querySelector("#pass2");
+       let h3=document.querySelector("#sub");
+        h3.addEventListener("click",()=>{
+           if (h1.value===h2.value){
+            alert("password matched")
+           }
+                
+            else
+                alert("password does not match")
+              
+});
+   
+  
+        
+
+       
+
+        
+    </script>
+    
+</body>
+</html>
